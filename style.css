@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: wheat;
+}
+
+.slider-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.img-container {
+  display: flex;
+  transition: transform 0.4s;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  opacity: 0.5;
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+
+.btn:hover{
+    text-shadow: 4px 4px 8px rgba(255,0,0,0.6);
+    opacity: 1;
+}
